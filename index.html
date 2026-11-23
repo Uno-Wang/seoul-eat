@@ -56,9 +56,138 @@ html,body{max-width:100%;overflow-x:clip}
  .topnav .hotel-top{font-size:10px}
  .buffet-picks{grid-template-columns:minmax(0,1fr)}
 }
+
+.today-section{margin:0 0 26px;padding:22px 22px 20px;background:var(--white);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:17px;box-shadow:var(--shadow);scroll-margin-top:-190px}
+.today-section .section-title{font-size:26px}
+.today-section .section-sub{margin-bottom:14px}
+.today-meta{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.today-meta span{background:var(--soft);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:650}
+.today-timeline{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.tstep{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding-top:16px;border-top:1px solid var(--line)}
+.tstep:first-child{border-top:0;padding-top:0}
+.ttime{font-weight:800;font-size:17px;color:var(--accent);line-height:1.4;letter-spacing:-.01em}
+.ttime small{display:block;font-size:10px;color:var(--muted);font-weight:650;letter-spacing:.06em}
+.tbody{min-width:0}
+.tbody h3{font-size:17px;margin:0 0 6px;line-height:1.45}
+.tbody>p{font-size:13px;line-height:1.8;margin:0 0 10px;color:var(--text)}
+.tbody ul{margin:0 0 10px;padding-left:18px;font-size:13px;line-height:1.85}
+.tbody li b[lang=ko]{font-weight:750}
+.today-label{display:block;font-size:10px;letter-spacing:.14em;font-weight:800;color:var(--muted);margin:12px 0 6px}
+.legs{display:grid;gap:9px;margin:0 0 10px}
+.leg{border:1px solid var(--line);border-radius:12px;padding:11px 13px;background:#fbfaf5}
+.line{display:inline-flex;align-items:center;gap:6px;border-radius:99px;padding:3px 11px;font-size:12px;color:#fff;font-weight:700;margin-bottom:8px}
+.line b{font-weight:800}
+.line.sb{background:#c8102e}.line.l2{background:#00883f}.line.l3{background:#d96a00}.line.l4{background:#0086c4}.line.walk{background:var(--ink)}
+.leg-main{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.leg-arrow{color:var(--muted);font-weight:800}
+.stn{display:inline-flex;flex-direction:column;line-height:1.3}
+.stn b{font-size:19px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+.stn-en{font-size:12px;font-weight:700;color:var(--text)}
+.stn-zh{font-size:11px;color:var(--muted)}
+.leg-dir,.leg-stops{font-size:12px;line-height:1.75;margin:7px 0 0;color:var(--text)}
+.leg-stops{color:var(--muted);margin-top:3px}
+.leg-dir b,.leg-stops b{color:var(--ink)}
+.today-links{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 2px}
+.today-map,.today-jump{display:inline-flex;align-items:center;min-height:40px;padding:8px 13px;border-radius:9px;background:var(--soft);font-size:12px;font-weight:700}
+.today-jump{background:var(--ink);color:#fff}
+.today-note{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 8px}
+.sign-table{width:100%;border-collapse:collapse;font-size:13px;margin:0 0 6px}
+.sign-table th,.sign-table td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.sign-table th{font-size:16px;font-weight:800;color:var(--ink);white-space:nowrap;width:1%}
+.today-fold{margin-top:16px;border-top:1px solid var(--line);padding-top:6px}
+.today-fold>summary{min-height:44px;display:flex;align-items:center;font-size:13px;font-weight:700;color:var(--ink)}
+.today-fold>div{padding:4px 0 8px}
+.today-history p{font-size:12px;color:var(--muted);margin:0 0 8px}
+@media(max-width:700px){.today-section{padding:18px 15px 16px;border-radius:14px}.today-section .section-title{font-size:22px}.tstep{grid-template-columns:1fr;gap:5px}.ttime{display:flex;align-items:baseline;gap:8px;font-size:16px}.ttime small{display:inline}.stn b{font-size:18px}.leg{padding:10px 11px}}
+@media print{.today-section{box-shadow:none;break-inside:auto}.today-fold>div{display:block}}
 </style></head><body id="top">
-<header class="wrap"><div class="topbar"><a class="brand" href="#top"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M3 10h18c0 5-3 9-9 9s-9-4-9-9Z"></path><path d="M8 21h8M8 6V3m4 3V2m4 4V3"></path></svg><span>SEOUL · LOCAL TABLE</span></a><nav aria-label="頁面導覽" class="topnav"><a class="desktop-only" href="#restaurants">餐廳清單</a><a class="hotel-top" data-app="hotel" href="https://map.naver.com/p/search/%EA%B7%B8%EB%9E%98%EB%B9%84%ED%8B%B0%20%EC%A1%B0%EC%84%A0%20%EC%84%9C%EC%9A%B8%20%ED%8C%90%EA%B5%90%20%ED%8C%90%EA%B5%90%EC%97%AD%EB%A1%9C146%EB%B2%88%EA%B8%B8%202" rel="noopener noreferrer" target="_blank" title="使用 HTTPS 開啟 Naver 地圖；是否轉至 App 由 iOS 決定">Naver 回飯店 <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg></a></nav></div>
-<section class="hero"><div><p class="eyebrow">板橋出發 · 實際餐點照片 · 兩人整桌餐費</p><h1>首爾，<span>兩人好好吃。</span></h1><p class="hero-intro">烤肉、熱鍋與日常飯食，先看餐點，再決定去哪吃。保留韓文地址，直接開啟手機上的 Naver Map。</p><div class="hero-meta"><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="9" cy="7" r="3"></circle><path d="M3 21v-4a6 6 0 0 1 12 0v4m2-17a3 3 0 0 1 0 6m2 11v-4a6 6 0 0 0-2-4"></path></svg> 兩人總額</span><span>18 家餐廳 · 32 張實拍</span><span>烤肉吃到飽 4 家</span></div><div class="hero-links"><a href="#restaurants">查看全部餐廳</a><a href="#map-help">Naver 中文設定</a></div></div><aside class="hero-note"><span class="mini-label">這次怎麼選</span><h2>價格清楚，餐點看得到。<br/>找到值得吃的一餐。</h2><p>按住宿圈與觀光區整理，保留韓文用餐口碑與公開菜單來源。點餐組合顯示整桌總額，方便共同安排預算。</p><a href="#day-route">看看兩人的一日吃法 <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg></a></aside></section>
+<header class="wrap"><div class="topbar"><a class="brand" href="#top"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M3 10h18c0 5-3 9-9 9s-9-4-9-9Z"></path><path d="M8 21h8M8 6V3m4 3V2m4 4V3"></path></svg><span>SEOUL · LOCAL TABLE</span></a><nav aria-label="頁面導覽" class="topnav"><a class="desktop-only" href="#today">今日行程</a><a class="desktop-only" href="#restaurants">餐廳清單</a><a class="hotel-top" data-app="hotel" href="https://map.naver.com/p/search/%EA%B7%B8%EB%9E%98%EB%B9%84%ED%8B%B0%20%EC%A1%B0%EC%84%A0%20%EC%84%9C%EC%9A%B8%20%ED%8C%90%EA%B5%90%20%ED%8C%90%EA%B5%90%EC%97%AD%EB%A1%9C146%EB%B2%88%EA%B8%B8%202" rel="noopener noreferrer" target="_blank" title="使用 HTTPS 開啟 Naver 地圖；是否轉至 App 由 iOS 決定">Naver 回飯店 <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg></a></nav></div>
+<section class="hero"><div><p class="eyebrow">板橋出發 · 實際餐點照片 · 兩人整桌餐費</p><h1>首爾，<span>兩人好好吃。</span></h1><p class="hero-intro">烤肉、熱鍋與日常飯食，先看餐點，再決定去哪吃。保留韓文地址，直接開啟手機上的 Naver Map。</p><div class="hero-meta"><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="9" cy="7" r="3"></circle><path d="M3 21v-4a6 6 0 0 1 12 0v4m2-17a3 3 0 0 1 0 6m2 11v-4a6 6 0 0 0-2-4"></path></svg> 兩人總額</span><span>18 家餐廳 · 32 張實拍</span><span>烤肉吃到飽 4 家</span></div><div class="hero-links"><a href="#today">今日行程</a><a href="#restaurants">查看全部餐廳</a><a href="#map-help">Naver 中文設定</a></div></div><aside class="hero-note"><span class="mini-label">這次怎麼選</span><h2>價格清楚，餐點看得到。<br/>找到值得吃的一餐。</h2><p>按住宿圈與觀光區整理，保留韓文用餐口碑與公開菜單來源。點餐組合顯示整桌總額，方便共同安排預算。</p><a href="#day-route">看看兩人的一日吃法 <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg></a></aside></section>
+<!-- 今日行程區塊：每次只放一份「今日」行程（article.today-plan）。
+     換新路線時，把舊的 article 整段搬進下方 #today-history 的 details 內，再放入新的 article。 -->
+<section aria-labelledby="today-title" class="today-section" id="today">
+<article class="today-plan" data-date="2026-11-23">
+<p class="section-eyebrow">今日行程 / 2026.11.23（一）</p>
+<h2 class="section-title" id="today-title">南大門 → 明洞 → 乙支路</h2>
+<p class="section-sub">中午到南大門市場吃午餐、逛市場，下午步行到明洞購物，傍晚往乙支路吃五花豬配泡菜鍋。三站都在同一區塊，中間以步行為主。</p>
+<div class="today-meta"><span>韓國時間・可整體順延</span><span>板橋出發約 50–60 分鐘</span><span>午晚兩餐約 ₩88,000</span><span>小吃請備現金</span></div>
+<ol class="today-timeline">
+<li class="tstep"><div class="ttime">11:30<small>出發</small></div><div class="tbody">
+<h3>板橋 → 南大門市場｜地鐵轉兩次</h3>
+<p>從飯店旁的板橋站上車，共三段。每段先看<b>路線顏色</b>，再對<b>月台方向</b>的韓文。</p>
+<div class="legs"><div class="leg"><span class="line sb"><b lang="ko">신분당선</b> Shinbundang Line</span><div class="leg-main"><span class="stn"><b lang="ko">판교</b><span class="stn-en">Pangyo</span><span class="stn-zh">板橋</span></span><span class="leg-arrow" aria-hidden="true">→</span><span class="stn"><b lang="ko">신사</b><span class="stn-en">Sinsa</span><span class="stn-zh">新沙</span></span></div><p class="leg-dir">月台方向：<b lang="ko">신사 방면</b>（往 Sinsa）。反方向是 <span lang="ko">광교</span> Gwanggyo，不要搭錯。</p><p class="leg-stops">共 7 站，坐到終點：<span lang="ko">청계산입구</span> Cheonggyesan → <span lang="ko">양재시민의숲</span> Yangjae Citizen’s Forest → <span lang="ko">양재</span> Yangjae → <span lang="ko">강남</span> Gangnam → <span lang="ko">신논현</span> Sinnonhyeon → <span lang="ko">논현</span> Nonhyeon → <b lang="ko">신사</b> <b>Sinsa</b></p></div><div class="leg"><span class="line l3"><b lang="ko">3호선</b> Line 3（橘色）</span><div class="leg-main"><span class="stn"><b lang="ko">신사</b><span class="stn-en">Sinsa</span><span class="stn-zh">新沙</span></span><span class="leg-arrow" aria-hidden="true">→</span><span class="stn"><b lang="ko">충무로</b><span class="stn-en">Chungmuro</span><span class="stn-zh">忠武路</span></span></div><p class="leg-dir">月台方向：<b lang="ko">구파발·대화 방면</b>（往 Gupabal／Daehwa）。反方向是 <span lang="ko">수서·오금</span> Suseo／Ogeum。</p><p class="leg-stops">共 6 站：<span lang="ko">압구정</span> Apgujeong → <span lang="ko">옥수</span> Oksu → <span lang="ko">금호</span> Geumho → <span lang="ko">약수</span> Yaksu → <span lang="ko">동대입구</span> Dongguk Univ. → <b lang="ko">충무로</b> <b>Chungmuro</b></p></div><div class="leg"><span class="line l4"><b lang="ko">4호선</b> Line 4（淺藍色）</span><div class="leg-main"><span class="stn"><b lang="ko">충무로</b><span class="stn-en">Chungmuro</span><span class="stn-zh">忠武路</span></span><span class="leg-arrow" aria-hidden="true">→</span><span class="stn"><b lang="ko">회현</b><span class="stn-en">Hoehyeon</span><span class="stn-zh">會賢</span></span></div><p class="leg-dir">月台方向：<b lang="ko">서울역·사당 방면</b>（往 Seoul Station／Sadang）。反方向是 <span lang="ko">진접</span> Jinjeop。</p><p class="leg-stops">共 2 站：<span lang="ko">명동</span> Myeong-dong → <b lang="ko">회현</b> <b>Hoehyeon</b>。站名副標是 <span lang="ko">남대문시장</span>（Namdaemun Market）。</p></div></div>
+<p class="today-note">在 <span lang="ko">회현</span> Hoehyeon 站走 <b>5 號出口</b>（<span lang="ko">5번 출구</span>）就是南大門市場入口；6 號出口也通市場。</p>
+</div></li>
+<li class="tstep"><div class="ttime">12:30<small>午餐・逛市場</small></div><div class="tbody">
+<h3>南大門市場 <span lang="ko">남대문시장</span> Namdaemun Market</h3>
+<p>先吃午餐，再逛市場。白天最熱鬧，傍晚後多數店家收攤。午餐不要吃太飽，留肚子給小吃與晚上的烤肉。</p>
+<span class="today-label">午餐二選一</span>
+<ul>
+<li><b>喜樂帶魚</b> <b lang="ko">희락갈치</b>：辣燉帶魚配飯，兩人加蒸蛋 ₩31,000。魚刺較多、口味偏辣。</li>
+<li><b>刀削麵巷</b> <b lang="ko">칼국수골목</b>：一條小巷都是麵攤，每人約 ₩6,500–8,000，吃得輕一點選這裡。</li>
+</ul>
+<span class="today-label">拿著走的小吃</span>
+<ul>
+<li><b>蔬菜糖餅</b> <b lang="ko">야채호떡</b>：包冬粉蔬菜的鹹糖餅，南大門的招牌路邊點心。</li>
+<li><b>手工大包子</b> <b lang="ko">가메골손왕만두</b>：外帶以 5 個為單位，營業 08:00–20:00。</li>
+<li><b>魚糕條</b> <b lang="ko">핫바</b>：夾香腸或年糕的炸魚糕串。</li>
+</ul>
+<span class="today-label">逛什麼</span>
+<p>海苔、人蔘等伴手禮，飾品、雜貨與童裝。價格可以多比幾家。</p>
+<div class="today-links"><a class="today-jump" data-jump="huirak" href="#huirak">喜樂帶魚・餐廳卡片 →</a><a class="today-map" href="https://map.naver.com/p/search/%EB%82%A8%EB%8C%80%EB%AC%B8%EC%8B%9C%EC%9E%A5" rel="noopener noreferrer" target="_blank">南大門市場地圖 ↗</a><a class="today-map" href="https://map.naver.com/p/search/%EB%82%A8%EB%8C%80%EB%AC%B8%EC%8B%9C%EC%9E%A5%20%EC%B9%BC%EA%B5%AD%EC%88%98%EA%B3%A8%EB%AA%A9" rel="noopener noreferrer" target="_blank">刀削麵巷地圖 ↗</a><a class="today-map" href="https://map.naver.com/p/search/%EA%B0%80%EB%A9%94%EA%B3%A8%EC%86%90%EC%99%95%EB%A7%8C%EB%91%90%20%EB%82%A8%EB%8C%80%EB%AC%B8%EB%B3%B8%EC%A0%90" rel="noopener noreferrer" target="_blank">大包子地圖 ↗</a></div>
+</div></li>
+<li class="tstep"><div class="ttime">14:00<small>購物</small></div><div class="tbody">
+<h3>步行到明洞 <span lang="ko">명동</span> Myeong-dong</h3>
+<div class="legs"><div class="leg"><span class="line walk"><b lang="ko">도보</b> 步行約 10 分鐘</span><div class="leg-main"><span class="stn"><b lang="ko">남대문시장</b><span class="stn-en">Namdaemun Market</span><span class="stn-zh">南大門市場</span></span><span class="leg-arrow" aria-hidden="true">→</span><span class="stn"><b lang="ko">명동</b><span class="stn-en">Myeong-dong</span><span class="stn-zh">明洞</span></span></div><p class="leg-dir">往新世界百貨本店（<b lang="ko">신세계백화점 본점</b> Shinsegae）方向走，過百貨後就是明洞商圈。</p><p class="leg-stops">不必搭地鐵；兩地只隔一站。</p></div></div>
+<span class="today-label">逛什麼</span>
+<p>美妝旗艦店最集中，適合一次比價；另有 Musinsa 明洞店等服飾店。</p>
+<span class="today-label">拿著走的小吃</span>
+<ul>
+<li><b>雞蛋糕</b> <b lang="ko">계란빵</b>、<b>魚糕串</b> <b lang="ko">어묵</b>、<b>糖餅</b> <b lang="ko">호떡</b>：經典款價位約 ₩1,000–6,000。</li>
+<li>街邊攤約下午三、四點後才陸續擺出。龍蝦、起司類花式攤位價格偏高。</li>
+</ul>
+<p class="today-note">想坐下來吃麵，清單內的明洞餃子新館就在明洞站 8 號出口旁。</p>
+<div class="today-links"><a class="today-jump" data-jump="kyoja" href="#kyoja">明洞餃子・餐廳卡片 →</a><a class="today-map" href="https://map.naver.com/p/search/%EB%AA%85%EB%8F%99%EA%B1%B0%EB%A6%AC" rel="noopener noreferrer" target="_blank">明洞商圈地圖 ↗</a></div>
+</div></li>
+<li class="tstep"><div class="ttime">16:15<small>移動</small></div><div class="tbody">
+<h3>明洞 → 乙支路 4 街｜地鐵 2 站或沿清溪川散步</h3>
+<p>從明洞商圈北側的乙支路入口站上車。想散步的話，沿清溪川（<span lang="ko">청계천</span> Cheonggyecheon）往東走約 25 分鐘也能到。</p>
+<div class="legs"><div class="leg"><span class="line l2"><b lang="ko">2호선</b> Line 2（綠色）</span><div class="leg-main"><span class="stn"><b lang="ko">을지로입구</b><span class="stn-en">Euljiro 1(il)-ga</span><span class="stn-zh">乙支路入口</span></span><span class="leg-arrow" aria-hidden="true">→</span><span class="stn"><b lang="ko">을지로4가</b><span class="stn-en">Euljiro 4(sa)-ga</span><span class="stn-zh">乙支路 4 街</span></span></div><p class="leg-dir">月台方向：<b lang="ko">을지로3가·성수 방면</b>（往 Euljiro 3-ga／Seongsu，<span lang="ko">내선순환</span> 內圈）。反方向是 <span lang="ko">시청</span> City Hall。</p><p class="leg-stops">共 2 站：<span lang="ko">을지로3가</span> Euljiro 3(sam)-ga → <b lang="ko">을지로4가</b> <b>Euljiro 4(sa)-ga</b></p></div></div>
+<span class="today-label">時間夠再加｜廣藏市場 <span lang="ko">광장시장</span> Gwangjang Market</span>
+<ul>
+<li><b>麻藥飯捲</b> <b lang="ko">마약김밥</b>、<b>綠豆煎餅</b> <b lang="ko">빈대떡</b>，從乙支路 4 街步行約 5–8 分鐘。</li>
+<li>部分攤位有價格爭議，先看標價再點，並確認付款方式。</li>
+</ul>
+<div class="today-links"><a class="today-map" href="https://map.naver.com/p/search/%EC%9D%84%EC%A7%80%EB%A1%9C4%EA%B0%80%EC%97%AD" rel="noopener noreferrer" target="_blank">乙支路 4 街站地圖 ↗</a><a class="today-map" href="https://map.naver.com/p/search/%EA%B4%91%EC%9E%A5%EC%8B%9C%EC%9E%A5" rel="noopener noreferrer" target="_blank">廣藏市場地圖 ↗</a></div>
+</div></li>
+<li class="tstep"><div class="ttime">17:30<small>晚餐</small></div><div class="tbody">
+<h3>恩珠亭 <span lang="ko">은주정</span>｜五花豬＋泡菜鍋</h3>
+<p>晚餐點三份五花豬約 450g，附泡菜鍋，兩人 ₩57,000。週一營業 10:30–22:00，最後點餐 21:30。</p>
+<p class="today-note">地址：<span lang="ko">서울 중구 창경궁로8길 32</span>。店在芳山市場巷內，出站後請用 Naver Map 導航。</p>
+<div class="today-links"><a class="today-jump" data-jump="eunjujeong" href="#eunjujeong">恩珠亭・餐廳卡片 →</a><a class="today-map" href="https://map.naver.com/p/search/%EC%9D%80%EC%A3%BC%EC%A0%95%20%EC%B0%BD%EA%B2%BD%EA%B6%81%EB%A1%9C8%EA%B8%B8%2032" rel="noopener noreferrer" target="_blank">恩珠亭地圖 ↗</a></div>
+</div></li>
+<li class="tstep"><div class="ttime">19:30<small>回飯店</small></div><div class="tbody">
+<h3>乙支路 → 板橋｜約 50–60 分鐘</h3>
+<div class="legs"><div class="leg"><span class="line l2"><b lang="ko">2호선</b> Line 2（綠色）</span><div class="leg-main"><span class="stn"><b lang="ko">을지로4가</b><span class="stn-en">Euljiro 4(sa)-ga</span><span class="stn-zh">乙支路 4 街</span></span><span class="leg-arrow" aria-hidden="true">→</span><span class="stn"><b lang="ko">을지로3가</b><span class="stn-en">Euljiro 3(sam)-ga</span><span class="stn-zh">乙支路 3 街</span></span></div><p class="leg-dir">月台方向：<b lang="ko">을지로3가·시청 방면</b>（往 Euljiro 3-ga／City Hall，<span lang="ko">외선순환</span> 外圈）。</p><p class="leg-stops">只搭 1 站。也可以從餐廳直接步行到 <span lang="ko">을지로3가</span> 站，約 10 分鐘。</p></div><div class="leg"><span class="line l3"><b lang="ko">3호선</b> Line 3（橘色）</span><div class="leg-main"><span class="stn"><b lang="ko">을지로3가</b><span class="stn-en">Euljiro 3(sam)-ga</span><span class="stn-zh">乙支路 3 街</span></span><span class="leg-arrow" aria-hidden="true">→</span><span class="stn"><b lang="ko">신사</b><span class="stn-en">Sinsa</span><span class="stn-zh">新沙</span></span></div><p class="leg-dir">月台方向：<b lang="ko">수서·오금 방면</b>（往 Suseo／Ogeum）。反方向是 <span lang="ko">구파발·대화</span>。</p><p class="leg-stops">共 7 站：<span lang="ko">충무로</span> Chungmuro → <span lang="ko">동대입구</span> Dongguk Univ. → <span lang="ko">약수</span> Yaksu → <span lang="ko">금호</span> Geumho → <span lang="ko">옥수</span> Oksu → <span lang="ko">압구정</span> Apgujeong → <b lang="ko">신사</b> <b>Sinsa</b></p></div><div class="leg"><span class="line sb"><b lang="ko">신분당선</b> Shinbundang Line</span><div class="leg-main"><span class="stn"><b lang="ko">신사</b><span class="stn-en">Sinsa</span><span class="stn-zh">新沙</span></span><span class="leg-arrow" aria-hidden="true">→</span><span class="stn"><b lang="ko">판교</b><span class="stn-en">Pangyo</span><span class="stn-zh">板橋</span></span></div><p class="leg-dir">月台方向：<b lang="ko">광교 방면</b>（往 Gwanggyo）。</p><p class="leg-stops">共 7 站：<span lang="ko">논현</span> Nonhyeon → <span lang="ko">신논현</span> Sinnonhyeon → <span lang="ko">강남</span> Gangnam → <span lang="ko">양재</span> Yangjae → <span lang="ko">양재시민의숲</span> Yangjae Citizen’s Forest → <span lang="ko">청계산입구</span> Cheonggyesan → <b lang="ko">판교</b> <b>Pangyo</b></p></div></div>
+</div></li>
+</ol>
+<details class="today-fold"><summary>看不懂指標時｜車站常見韓文</summary><div>
+<table class="sign-table"><tbody>
+<tr><th lang="ko">호선</th><td>幾號線（<span lang="ko">3호선</span>＝3 號線）</td></tr>
+<tr><th lang="ko">방면</th><td>往…方向，月台與樓梯口的指標會寫</td></tr>
+<tr><th lang="ko">갈아타는 곳</th><td>轉乘（Transfer）</td></tr>
+<tr><th lang="ko">나가는 곳</th><td>出口方向（Way Out）</td></tr>
+<tr><th lang="ko">출구</th><td>出口（<span lang="ko">5번 출구</span>＝5 號出口）</td></tr>
+<tr><th lang="ko">타는 곳</th><td>乘車處／月台</td></tr>
+<tr><th lang="ko">이번 역</th><td>本站（車廂螢幕）</td></tr>
+<tr><th lang="ko">다음 역</th><td>下一站（車廂螢幕）</td></tr>
+</tbody></table>
+<p class="today-note">車站指標與車廂廣播都有英文，站名的英文拼法與上方一致。</p>
+</div></details>
+<p class="today-note" style="margin-top:12px">交通時間、站數與月台方向為規劃資料，實際班次與出口以當日 Naver Map 為準；小吃價格與攤位營業依現場為準。</p>
+</article>
+<details class="today-fold today-history" id="today-history"><summary>歷史行程</summary><div><p>目前沒有較早的行程。換新路線後，舊行程會收在這裡。</p></div></details>
+</section>
 <section aria-labelledby="map-help-title" class="language-panel" id="map-help"><h2 id="map-help-title">Naver Map：先設中文，再從清單開啟 App</h2><p>台灣商店下載的是同一款 Naver Map。目前有<b>簡體中文與英文</b>介面；地圖按鈕使用 HTTPS 連結；iOS 是否交由 App 開啟取決於手機設定，沿用它的語言設定。店名、地址與部分評論仍可能顯示韓文。</p><p class="map-link-note">地圖連結使用 HTTPS。若 iPhone 預覽器未直接開啟 Naver Map App，可在 Safari 開啟連結，或複製韓文地址至 App 搜尋。</p><details><summary>展開一次性設定步驟與台灣商店連結</summary><div class="language-content"><div class="language-steps"><div><h3>Android</h3><ol><li>開啟 Naver Map，點底部 <b>MY</b>。</li><li>點右上角齒輪，再選 <b>언어（語言）</b>。</li><li>選 <b>中文（简体）</b>，再回到清單點店家。</li></ol></div><div><h3>iPhone</h3><ol><li>Naver Map 底部 <b>MY → 齒輪 → 언어（語言）</b>。</li><li>依提示前往 iPhone 的 Naver Map 設定，把偏好語言設為<b>簡體中文</b>。</li><li>若沒有語言選項，先到 iPhone「設定 → 一般 → 語言與地區」加入簡體中文，再回到 App 語言設定。</li></ol></div></div><p class="language-note">不必將整台手機改成簡體中文。Naver 目前未列繁體中文介面；連結不能替 App 強制切換語言。若檔案預覽器未開啟 App，請下載後用瀏覽器開啟，或複製韓文地址到 Naver Map 搜尋。</p><div class="store-links"><a href="https://apps.apple.com/tw/app/naver-maps-navigation/id311867728" rel="noopener noreferrer" target="_blank">台灣 App Store ↗</a><a href="https://play.google.com/store/apps/details?id=com.nhn.android.nmap&amp;hl=zh_TW" rel="noopener noreferrer" target="_blank">Google Play 繁中商店頁 ↗</a><a href="https://help.naver.com/service/5637/contents/8275?osType=MOBILE" rel="noopener noreferrer" target="_blank">Naver 官方語言說明 ↗</a></div></div></details></section>
 <details class="hotel-panel" id="hotel"><summary><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span><b>住宿起點｜首爾板橋革蘭維迪酒店</b>　板橋站旁・京畿道城南市</span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="m7 10 5 5 5-5"></path></svg></summary><div class="hotel-inner"><p class="hotel-name" lang="ko">그래비티 조선 서울 판교, 오토그래프 컬렉션</p><p class="address" lang="ko" tabindex="0">경기 성남시 분당구 판교역로146번길 2</p><div class="hotel-actions"><a class="hotel-app" data-app="hotel" href="https://map.naver.com/p/search/%EA%B7%B8%EB%9E%98%EB%B9%84%ED%8B%B0%20%EC%A1%B0%EC%84%A0%20%EC%84%9C%EC%9A%B8%20%ED%8C%90%EA%B5%90%20%ED%8C%90%EA%B5%90%EC%97%AD%EB%A1%9C146%EB%B2%88%EA%B8%B8%202" rel="noopener noreferrer" target="_blank" title="使用 HTTPS 開啟 Naver 地圖；是否轉至 App 由 iOS 決定"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Z"></path><path d="M9 3v15M15 6v15"></path></svg>開啟 Naver 地圖（App／網頁）</a><button class="js-only" data-copy="hotel" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="13" rx="2" width="12" x="8" y="8"></rect><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path></svg> 複製飯店地址</button><a href="https://map.naver.com/p/search/%EA%B7%B8%EB%9E%98%EB%B9%84%ED%8B%B0%20%EC%A1%B0%EC%84%A0%20%EC%84%9C%EC%9A%B8%20%ED%8C%90%EA%B5%90%20%ED%8C%90%EA%B5%90%EC%97%AD%EB%A1%9C146%EB%B2%88%EA%B8%B8%202" rel="noopener noreferrer" target="_blank">網頁備用（可能顯示韓文）</a></div></div></details>
 <section class="buffet-section" id="buffet-guide"><p class="section-eyebrow">烤肉吃到飽 / 推薦程度</p><h2 class="section-title">4 家吃到飽，照預算與動線選。</h2><p class="section-sub">推薦程度綜合餐費、肉品與配餐、韓文用餐口碑及路線便利性，屬本清單的判斷。點選下方店家，可查看照片、時限與額外收費。</p><div class="buffet-picks"><a class="buffet-pick" data-jump="gogissarong" href="#gogissarong"><span class="buffet-pick-rank">優先推薦</span><h3>Gogi Ssalong・望遠站店</h3><p>白飯、汽水機飲料含；平日午餐較便宜。</p><div><span>兩人總額</span><strong>₩39,800 起</strong><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg></div></a><a class="buffet-pick" data-jump="piguniversity" href="#piguniversity"><span class="buffet-pick-rank">推薦</span><h3>豬大學・合井</h3><p>10周年活動價；飲料另計，入店先確認活動。</p><div><span>兩人總額</span><strong>₩31,800 起</strong><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg></div></a><a class="buffet-pick" data-jump="myeongnyun-hapjeong" href="#myeongnyun-hapjeong"><span class="buffet-pick-rank">推薦</span><h3>明倫進士排骨・合井店</h3><p>白飯、汽水機飲料含；肉品與熟食種類較多。</p><div><span>兩人總額</span><strong>₩43,800 起</strong><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg></div></a><a class="buffet-pick" data-jump="myeongnyun-dongmyo" href="#myeongnyun-dongmyo"><span class="buffet-pick-rank">順路可選</span><h3>明倫進士排骨・東廟店</h3><p>東大門、東廟順路備選；汽水是否包含需確認。</p><div><span>兩人總額</span><strong>₩45,800 起</strong><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg></div></a></div></section></header>
